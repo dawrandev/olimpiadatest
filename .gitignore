@@ -15,5 +15,3 @@ yarn-error.log
 /.idea
 /.vscode
 yakpro-po
-app/Services/
-app/Repositories/
