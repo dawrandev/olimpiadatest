@@ -1,0 +1,78 @@
+.delete-card {
+    transition: all 0.3s ease;
+    border-left: 4px solid #dc3545;
+}
+
+.delete-card:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    transform: translateY(-2px);
+}
+
+.info-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.warning-box {
+    background: #fff3cd;
+    border-left: 4px solid #ffc107;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.stat-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #dc3545;
+}
+
+.stat-label {
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+.selection-badge {
+    display: inline-block;
+    padding: 8px 15px;
+    background: #e3f2fd;
+    border-radius: 20px;
+    margin: 5px;
+    color: #1976d2;
+    font-weight: 500;
+}
+
+.selection-badge i {
+    margin-right: 5px;
+}
+
+.delete-btn-danger {
+    background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+    border: none;
+    padding: 12px 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.delete-btn-danger:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(220, 53, 69, 0.4);
+}

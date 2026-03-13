@@ -1,0 +1,39 @@
+.page-header {
+    height: 80px;
+    min-height: 80px;
+    max-height: 80px;
+    overflow: visible; 
+    display: flex;
+    align-items: center;
+}
+
+
+.page-header .header-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center; 
+}
+
+.header-logo-wrapper,
+.left-header,
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-menus {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    height: 100%;
+}
+
+.logo-wrapper img {
+    max-height: 55px;
+    width: auto;
+}
+
+.header-wrapper * {
+    vertical-align: middle;
+}
+/* test */

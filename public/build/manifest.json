@@ -1,0 +1,131 @@
+{
+  "resources/css/admin/dashboard.css": {
+    "file": "assets/dashboard-bwHy24Tt.css",
+    "src": "resources/css/admin/dashboard.css",
+    "isEntry": true
+  },
+  "resources/css/admin/header.css": {
+    "file": "assets/header-joZQC3uH.css",
+    "src": "resources/css/admin/header.css",
+    "isEntry": true
+  },
+  "resources/css/admin/questions/create.css": {
+    "file": "assets/create-CVPwspqh.css",
+    "src": "resources/css/admin/questions/create.css",
+    "isEntry": true
+  },
+  "resources/css/admin/questions/delete.css": {
+    "file": "assets/delete-Cx9bY7Ry.css",
+    "src": "resources/css/admin/questions/delete.css",
+    "isEntry": true
+  },
+  "resources/css/admin/questions/edit.css": {
+    "file": "assets/edit-Cg3XeEY-.css",
+    "src": "resources/css/admin/questions/edit.css",
+    "isEntry": true
+  },
+  "resources/css/admin/questions/index.css": {
+    "file": "assets/index-C6AvR5hs.css",
+    "src": "resources/css/admin/questions/index.css",
+    "isEntry": true
+  },
+  "resources/css/admin/test-assignments/student-detail.css": {
+    "file": "assets/student-detail-l0sNRNKZ.js",
+    "name": "student-detail",
+    "src": "resources/css/admin/test-assignments/student-detail.css",
+    "isEntry": true
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-l0sNRNKZ.js",
+    "name": "app",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/css/student/home.css": {
+    "file": "assets/home-yGDsWKqX.css",
+    "src": "resources/css/student/home.css",
+    "isEntry": true
+  },
+  "resources/css/student/results.css": {
+    "file": "assets/results-eUEXkqTN.css",
+    "src": "resources/css/student/results.css",
+    "isEntry": true
+  },
+  "resources/css/student/test.css": {
+    "file": "assets/test-CBuyMik1.css",
+    "src": "resources/css/student/test.css",
+    "isEntry": true
+  },
+  "resources/js/admin/dashboard.js": {
+    "file": "assets/dashboard-QZ2pPXgg.js",
+    "name": "dashboard",
+    "src": "resources/js/admin/dashboard.js",
+    "isEntry": true
+  },
+  "resources/js/admin/questions/create.js": {
+    "file": "assets/create-kNWclHwn.js",
+    "name": "create",
+    "src": "resources/js/admin/questions/create.js",
+    "isEntry": true
+  },
+  "resources/js/admin/questions/edit.js": {
+    "file": "assets/edit-QpHiZi4Y.js",
+    "name": "edit",
+    "src": "resources/js/admin/questions/edit.js",
+    "isEntry": true
+  },
+  "resources/js/admin/questions/index.js": {
+    "file": "assets/index-l0sNRNKZ.js",
+    "name": "index",
+    "src": "resources/js/admin/questions/index.js",
+    "isEntry": true
+  },
+  "resources/js/admin/students/create.js": {
+    "file": "assets/create-7s6k3F34.js",
+    "name": "create",
+    "src": "resources/js/admin/students/create.js",
+    "isEntry": true
+  },
+  "resources/js/admin/students/edit.js": {
+    "file": "assets/edit-uCiXTRep.js",
+    "name": "edit",
+    "src": "resources/js/admin/students/edit.js",
+    "isEntry": true
+  },
+  "resources/js/admin/students/index.js": {
+    "file": "assets/index-DvqUCrlc.js",
+    "name": "index",
+    "src": "resources/js/admin/students/index.js",
+    "isEntry": true
+  },
+  "resources/js/alert.js": {
+    "file": "assets/alert-OVpkXZgy.js",
+    "name": "alert",
+    "src": "resources/js/alert.js",
+    "isEntry": true
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-sUytFH0M.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  },
+  "resources/js/student/test.js": {
+    "file": "assets/test-Q37lvm52.js",
+    "name": "test",
+    "src": "resources/js/student/test.js",
+    "isEntry": true
+  },
+  "resources/js/sweetalert2@11.js": {
+    "file": "assets/sweetalert2@11-syilg941.js",
+    "name": "sweetalert2@11",
+    "src": "resources/js/sweetalert2@11.js",
+    "isEntry": true
+  },
+  "resources/js/tex-mml-chtml.js": {
+    "file": "assets/tex-mml-chtml-CBtq5OtD.js",
+    "name": "tex-mml-chtml",
+    "src": "resources/js/tex-mml-chtml.js",
+    "isEntry": true
+  }
+}

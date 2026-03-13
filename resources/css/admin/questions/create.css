@@ -1,0 +1,167 @@
+/* Questions Create - CSS */
+
+.image-preview {
+    max-width: 100%;
+    max-height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.answer-item {
+    padding: 15px;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background: #f8f9fa;
+    transition: all 0.3s ease;
+}
+
+.answer-item:hover {
+    border-color: #0d6efd;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.correct-answer {
+    border-color: #198754;
+    background: #d1e7dd;
+}
+
+.answers-container {
+    min-height: 50px;
+}
+
+.language-tab {
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #dee2e6;
+}
+
+.language-header {
+    background: linear-gradient(135deg, #0d6efd, #0056b3);
+    color: white;
+    padding: 15px;
+    border-radius: 10px 10px 0 0;
+    font-weight: bold;
+}
+
+.language-content {
+    padding: 20px;
+    background: white;
+}
+
+.questions-create .btn {
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: 500;
+}
+
+.questions-create .form-control,
+.questions-create .form-select {
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+    padding: 12px;
+}
+
+.questions-create .form-control:focus,
+.questions-create .form-select:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+.questions-create .card {
+    border-radius: 15px;
+    border: none;
+}
+
+.questions-create .card-header {
+    border-radius: 15px 15px 0 0;
+}
+
+/* Oddiy rasm yuklash stillari */
+.image-upload-container {
+    border: 2px dashed #dee2e6;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    background: #f8f9fa;
+    transition: all 0.3s ease;
+}
+
+.btn-upload {
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 500;
+    border: 2px solid #0d6efd;
+    transition: all 0.3s ease;
+}
+
+.btn-upload:hover {
+    background: #0d6efd;
+    color: white;
+    transform: translateY(-1px);
+}
+
+.preview-card {
+    position: relative;
+    display: inline-block;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background: white;
+    border: 1px solid #e0e0e0;
+    max-width: 300px;
+}
+
+.preview-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.preview-info {
+    padding: 12px;
+    text-align: left;
+}
+
+.file-name {
+    display: block;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 4px;
+    word-break: break-word;
+}
+
+.file-size {
+    font-size: 0.85rem;
+}
+
+.btn-remove {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(220, 53, 69, 0.9);
+    border: none;
+    color: white;
+}
+
+.btn-remove:hover {
+    background: #dc3545;
+}
+
+.image-upload-container.has-image {
+    border-color: #198754;
+    background: #d1e7dd;
+}
+
+.error-state {
+    border-color: #dc3545 !important;
+    background: #f8d7da !important;
+}

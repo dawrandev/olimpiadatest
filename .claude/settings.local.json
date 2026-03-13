@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(php artisan migrate:*)",
+      "Bash(composer dump-autoload:*)",
+      "Bash(php artisan cache:clear:*)",
+      "Bash(php artisan:*)",
+      "Bash(pandoc:*)",
+      "Bash(php -r \"echo shell_exec\\(''pandoc --version 2>&1''\\);\")",
+      "Bash(php -l:*)",
+      "Bash(taskkill:*)"
+    ]
+  }
+}

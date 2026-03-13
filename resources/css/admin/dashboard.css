@@ -1,0 +1,36 @@
+.icon-shape {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+}
+
+.card {
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+}
+
+.text-xs {
+    font-size: 0.75rem;
+}
+
+.font-weight-bold {
+    font-weight: 600;
+}
+
+.text-gray-800 {
+    color: #2d3748;
+}
+
+.card-header {
+    padding: 1.5rem 1.5rem 1rem 1.5rem;
+}
+
+.apexcharts-toolbar {
+    z-index: 10 !important;
+}

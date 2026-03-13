@@ -1,0 +1,111 @@
+.question-type-badge {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+}
+
+.matching-container {
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    padding: 1.5rem;
+    background: #f8f9fa;
+}
+
+.matching-side {
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    padding: 1rem;
+    background: white;
+}
+
+.matching-item {
+    background: white;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.sequence-item {
+    background: white;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.answer-row {
+    background: white;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    padding: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.math-preview {
+    min-height: 50px;
+    padding: 1rem;
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+}
+
+.key-badge {
+    width: 35px;
+    height: 35px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.math-editor-container {
+    position: relative;
+}
+
+.math-toolbar {
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+}
+
+.math-btn {
+    padding: 0.25rem 0.5rem;
+    border: 1px solid #dee2e6;
+    background: white;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+}
+
+.math-btn:hover {
+    background: #e9ecef;
+    border-color: #adb5bd;
+}
+
+.math-btn-group {
+    display: flex;
+    gap: 0.25rem;
+    margin-right: 0.5rem;
+}
+
+.math-mode-switch {
+    margin-left: auto;
+}
+
+.raw-latex-view {
+    font-family: "Courier New", monospace;
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    padding: 0.5rem;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+}
