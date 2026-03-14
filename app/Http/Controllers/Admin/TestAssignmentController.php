@@ -352,4 +352,94 @@ class TestAssignmentController extends Controller
 
         return redirect()->back()->with('success', __('Score updated successfully'));
     }
+
+    public function allResults()
+    {
+        $results = TestResult::with(['student.group.faculty', 'testAssignment.subject.translations'])
+            ->where('status', 'completed')
+            ->orderByDesc('correct_answers')
+            ->orderByDesc('score')
+            ->paginate(50);
+
+        return view('pages.admin.test-assignments.all-results', compact('results'));
+    }
+
+    public function exportAllResultsExcel()
+    {
+        $results = TestResult::with(['student.group.faculty', 'testAssignment.subject.translations'])
+            ->where('status', 'completed')
+            ->orderByDesc('correct_answers')
+            ->orderByDesc('score')
+            ->get();
+
+        $spreadsheet = new Spreadsheet();
+        $sheet = $spreadsheet->getActiveSheet();
+
+        $sheet->mergeCells('A1:K1');
+        $sheet->setCellValue('A1', 'Barcha test natijalari - ' . now()->format('d.m.Y'));
+        $sheet->getStyle('A1')->getFont()->setBold(true)->setSize(16);
+        $sheet->getStyle('A1')->getAlignment()->setHorizontal(Alignment::HORIZONTAL_CENTER);
+
+        $headers = [
+            '#',
+            'Talaba ID',
+            'F.I.O',
+            'Guruh',
+            'Fakultet',
+            'Fan',
+            "To'g'ri/Jami",
+            'Ball',
+            'Foiz (%)',
+            'Boshlangan',
+            'Yakunlangan',
+        ];
+        $sheet->fromArray($headers, null, 'A3');
+
+        $headerStyle = [
+            'font' => ['bold' => true, 'color' => ['rgb' => 'FFFFFF']],
+            'fill' => ['fillType' => Fill::FILL_SOLID, 'startColor' => ['rgb' => '4472C4']],
+            'alignment' => ['horizontal' => Alignment::HORIZONTAL_CENTER],
+        ];
+        $sheet->getStyle('A3:K3')->applyFromArray($headerStyle);
+
+        $row = 4;
+        foreach ($results as $index => $result) {
+            $points = $result->correct_answers * 2;
+
+            $sheet->setCellValue('A' . $row, $index + 1);
+            $sheet->setCellValue('B' . $row, $result->student->student_id ?? '-');
+            $sheet->setCellValue('C' . $row, $result->student->full_name);
+            $sheet->setCellValue('D' . $row, $result->student->group->name ?? '-');
+            $sheet->setCellValue('E' . $row, $result->student->group->faculty->name ?? '-');
+            $sheet->setCellValue('F' . $row, optional($result->testAssignment->subject->translations->firstWhere('language_id', currentLanguageId()))->name ?? '-');
+            $sheet->setCellValue('G' . $row, "{$result->correct_answers}/{$result->total_questions}");
+            $sheet->setCellValue('H' . $row, $points . ' ball');
+            $sheet->setCellValue('I' . $row, $result->score . '%');
+            $sheet->setCellValue('J' . $row, $result->started_at ? $result->started_at->format('d.m.Y H:i') : '-');
+            $sheet->setCellValue('K' . $row, $result->completed_at ? $result->completed_at->format('d.m.Y H:i') : '-');
+
+            $row++;
+        }
+
+        foreach (range('A', 'K') as $col) {
+            $sheet->getColumnDimension($col)->setAutoSize(true);
+        }
+
+        $styleArray = [
+            'borders' => [
+                'allBorders' => [
+                    'borderStyle' => Border::BORDER_THIN,
+                ],
+            ],
+        ];
+        $sheet->getStyle('A3:K' . ($row - 1))->applyFromArray($styleArray);
+
+        $filename = 'Barcha_test_natijalari_' . now()->format('Y-m-d') . '.xlsx';
+
+        header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
+        header("Content-Disposition: attachment; filename=\"{$filename}\"");
+        $writer = new Xlsx($spreadsheet);
+        $writer->save('php://output');
+        exit;
+    }
 }

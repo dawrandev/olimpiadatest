@@ -67,7 +67,7 @@
     });
     
     let blurCount = 0;
-    const MAX_BLUR = 3; 
+    const MAX_BLUR = 5;
     let lastBlurTime = 0;
     
     window.addEventListener('blur', function() {

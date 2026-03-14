@@ -97,6 +97,8 @@ Route::middleware(['auth', 'admin'])->group(function () {
 
         Route::controller(TestAssignmentController::class)->prefix('test-assignments')->as('test-assignments.')->group(function () {
             Route::get('/index', 'index')->name('index');
+            Route::get('/all-results', 'allResults')->name('all-results');
+            Route::get('/all-results/export-excel', 'exportAllResultsExcel')->name('all-results.export-excel');
             Route::get('/create', 'create')->name('create');
             Route::post('/store', 'store')->name('store');
             Route::get('/{testAssignment}/show', 'show')->name('show');

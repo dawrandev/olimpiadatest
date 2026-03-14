@@ -8,7 +8,8 @@
       "Bash(pandoc:*)",
       "Bash(php -r \"echo shell_exec\\(''pandoc --version 2>&1''\\);\")",
       "Bash(php -l:*)",
-      "Bash(taskkill:*)"
+      "Bash(taskkill:*)",
+      "Bash(ls:*)"
     ]
   }
 }

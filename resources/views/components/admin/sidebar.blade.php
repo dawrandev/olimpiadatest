@@ -85,6 +85,7 @@
                         <ul class="sidebar-submenu">
                             <li><a href="{{ route('admin.test-assignments.index') }}">{{ __('All Assignments') }}</a></li>
                             <li><a href="{{ route('admin.test-assignments.create') }}">{{ __('Create Assignment') }}</a></li>
+                            <li><a href="{{ route('admin.test-assignments.all-results') }}">{{ __('Results') }}</a></li>
                         </ul>
                     </li>
                 </ul>
